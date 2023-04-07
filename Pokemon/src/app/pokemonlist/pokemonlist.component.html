@@ -1,0 +1,9 @@
+<h1>Liste de monstres</h1>
+
+<ul>
+  <li *ngFor="let pokemon of pokemons">
+    <h2>{{ pokemon.name }}</h2>
+    <img [src]="pokemon.imageUrl" width="250px" />
+    <h2>{{ pokemon.nationalPokedexNumber }}</h2>
+  </li>
+</ul>
